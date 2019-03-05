@@ -10,7 +10,8 @@ h1, h2, h3{
 }
 p{
     font-family: "railway";
-    color:#777777;
+    color:black;
+    word-wrap: break-word;
 }
 h1{border-bottom: 5px solid #cccccc;
     background-color:white;
@@ -21,7 +22,7 @@ h1{border-bottom: 5px solid #cccccc;
 .hi{
     background-color:#4aaaa5;
     color:white;
-    width: 250px;
+    width: 17%;
     margin-left:17%;
     padding-top:15px;
     padding-bottom:25px;
@@ -43,42 +44,49 @@ h1{border-bottom: 5px solid #cccccc;
     text-decoration: none;
     size: 2px; 
 }
-
+h2{
+    color:#4aaaa5;
+    background-color:white;
+    margin-right:70%;
+    border-bottom: 5px solid #dddddd;
+    width:100%
+}
 h3{
         color:#4aaaa5;
         background-color:white;
-        margin-right:700px;
+        margin-right:70%;
         border-bottom: 5px solid #dddddd;
         clear: both;
         
       }
-.mainbox{
-        width: 960px;
+.wordcontainer{
         border:10px solid #dddddd;
+        width:75%;
         padding:45px;
-        margin-left: 17%;
-        margin-right:25%;
-        margin-top:100px;
+        margin-left: 12.5%;
+        margin-right:12.5%;
+        margin-top:10%;
         margin-bottom:10%;
         background-color: #ffffff;
+        text-emphasis: wrap;
 }
 .mainboxinp{
-    width: 960px;
+    width: 75%;
     border:10px solid #dddddd;
     padding:45px;
-    margin-left: 17%;
-    margin-right:25%;
-    margin-top:100px;
-    margin-bottom:10%;
+    margin-left: 12.5%;
+    margin-right:12.5%;
+    margin-top: 10%;
+    margin-bottom:20%;
     background-color: #ffffff;
 }
 .mainboxport{
-    width: 960px;
+    width: 75%;
     border:10px solid #dddddd;
-    padding:45px;
-    margin-left: 17%;
-    margin-right:25%;
-    margin-top:100px;
+    padding:3rem;
+    margin-left: 12.5%;
+    margin-right:12.5%;
+    margin-top:10%;
     margin-bottom:10%;
     background-color: #ffffff;
 
@@ -94,6 +102,7 @@ h3{
     clear:both;
     overflow:auto;
     text-align: left;
+    flex:1;
 }
 input[type=text], select{
     width:100%;
@@ -114,45 +123,11 @@ input[type=text], select{
     box-sizing: border-box;
     text-align: left;
 }
-.dogpics{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 40px auto 0 auto;
-    justify-content: space-around;
+img{
+    padding:5px;
 }
-.lineone{
-    flex-direction: column;
-    flex: 1;
-    flex-basis: 30%;
-    padding:20x;
-    margin: 20px;
-    box-sizing: border-box;
-}
-.linetwo{
-    flex:1;
-    flex-direction: column;
-    flex-basis: 30%;
-    margin: 20px;
-    padding:20px;
-    box-sizing: border-box;
-}
-.linethree{
-    flex:1;
-    flex-direction: column;
-    flex-basis: 30%;
-    margin:20px;
-    padding:20px;
-    box-sizing: border-box;
-}
-
-
-
-
 .wrapper{
-    min-height: 100%;
-    margin-bottom: -50px;
+    width:100%;
     background-color:#666666;
     border-top: 8px solid #4aaaa5;
     
@@ -167,7 +142,90 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+
 .footer,
 .push{
-    height: 50px;
+    height: 3rem;
+    margin: 0;
+
+
 }
+.wrapper{
+    position: static;
+    bottom:0;
+}
+@media only screen and (max-width: 980px){
+    .wordcontainer, .mainboxinp, .mainboxport{
+        margin-left: 5%;
+        width: auto;
+    }
+
+    .hi{margin:0px;
+    width:auto;
+    text-align: center;
+    height: 2.5rem;}
+    .linksheader{
+        background-color: white;
+        height: 2rem;
+    }
+    .pagelink{
+        text-decoration: none;
+        padding:10px;
+        color: #4aaaa5;
+    }
+}
+@media only screen and (max-width: 768px){}
+.wordcontainer, .mainboxinp, .mainboxport{
+    margin:5rem;
+    width: auto;
+}
+.linksheader{
+    background-color:white;
+        height: 2.5rem;
+
+}
+.pagelink{
+    text-decoration: none;
+    padding:10px;
+    color: #4aaaa5;
+}
+
+.hi{margin:0px;
+width:auto;
+text-align: center;
+height: 2.5rem;}
+
+@media only screen and (max-width: 640px){
+    .wordcontainer, .mainboxinp, .mainboxport{
+        margin:4px;
+        width: auto;
+    }
+
+    .hi{margin:0px;
+    width:auto;
+    text-align: center;
+    height: 2.5rem;}
+
+    .toplinks{
+        background-color: white
+        padding-top: 40px; 
+    }
+    .header{
+        height: 5rem;
+    }
+    .linksheader{
+        background-color: white;
+        height: 2rem;
+    }
+    .pagelink{
+        text-decoration: none;
+        padding:10px;
+        color: #4aaaa5;
+    }
+    .header2{
+        margin-bottom: 10px;
+        min-width: auto;
+    }
+    .wrapper{
+        max-width: 110%;
+    }
